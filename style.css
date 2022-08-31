@@ -5,14 +5,19 @@
     /* Background Color*/
     --dark1:rgb(35,35,35);
     --dark2:rgb(10,10,10);
+
     /* ----------- Board Colors ----------- */
-    --green1:rgb(29, 120, 40);
-    --green2:rgb(29, 120, 40);
+    --green:rgb(64, 161, 75);
+    --red:rgb(195, 59, 59);
+    --blue:rgb(66, 66, 180);
+    --white:rgb(255,255,255);
+
 
     --wood0:#f2dfa7;
     --wood1:#d2bf92;
     --wood2:#825625;
     --wood3:#805533;
+
 }
 body {
     background-image: linear-gradient(var(--dark1),var(--dark2));
@@ -24,7 +29,7 @@ body {
     align-items: center;
 }
 .chess-table {
-    box-shadow: 0px 0px 0px 10px rgb(143, 39, 39);
+    /* box-shadow: 0px 0px 0px 10px var(--greenBorder); */
     height: 500px;
     width: 500px;
     display: grid;
@@ -37,11 +42,11 @@ body {
     color: rgba(0,0,0,0.6);
 
 }
-.square.white-box {
-    background-color: var(--wood1);
+.square.white {
+    background-color: var(--white);
 }
-.square.black-box {
-    background-color: var(--wood3);
+.square.black {
+    background-color: var(--green);
 }
 .piece {
    position: absolute;
@@ -66,5 +71,20 @@ body {
 
 .piece {
     cursor: grab;
-    /* background-color: red; */
+}
+
+.change-boardColor {
+    display: grid;
+    justify-content: center;
+}
+#boardSelector {
+    width: 100px;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .chess-table {
+        height: 350px;
+        width: 350px;
+    }  
 }
