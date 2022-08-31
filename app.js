@@ -4,7 +4,6 @@ var square = document.querySelectorAll('.square');
 
 //Pieces and Board Settings
 
-import { boardSquares } from "./board/boardSettings.js";
 import { piecesPosition } from "./piecesPosition.js";
 
 piecesPosition(square); //Putting each piece in their Home Squares
