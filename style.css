@@ -24,7 +24,7 @@ body {
 }
 .main-board {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: center;
     align-items: center;
 }
@@ -53,6 +53,7 @@ body {
    height: 100%;
    top: 0;
    left: 6%;
+   z-index: 1;
    /* transform: tranlsate(-50%,50%); */
 }
 
@@ -74,6 +75,7 @@ body {
 }
 
 .change-boardColor {
+    margin: 20px auto 50px;
     display: grid;
     justify-content: center;
 }
