@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chess</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chess</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/jpg" href="img/favicon.jpg" />
 </head>
 <body>
     <div class="main-board">
-    <div class="chess-table">
-        <div id="a8" class="square white"></div>
-        <div id="b8" class="square black"></div>
-        <div id="c8" class="square white"></div>
-        <div id="d8" class="square black"></div>
-        <div id="e8" class="square white"></div>
-        <div id="f8" class="square black"></div>
-        <div id="g8" class="square white"></div>
-        <div id="h8" class="square black"></div>
-        
+        <div class="chess-table">
+            <div id="a8" class="square white"></div>
+            <div id="b8" class="square black"></div>
+            <div id="c8" class="square white"></div>
+            <div id="d8" class="square black"></div>
+            <div id="e8" class="square white"></div>
+            <div id="f8" class="square black"></div>
+            <div id="g8" class="square white"></div>
+            <div id="h8" class="square black"></div>
+            
         <div id="a7" class="square black"></div>
         <div id="b7" class="square white"></div>
         <div id="c7" class="square black"></div>
@@ -28,7 +28,7 @@
         <div id="f7" class="square white"></div>
         <div id="g7" class="square black"></div>
         <div id="h7" class="square white"></div>
-
+        
         <div id="a6" class="square white"></div>
         <div id="b6" class="square black"></div>
         <div id="c6" class="square white"></div>
@@ -55,7 +55,7 @@
         <div id="f4" class="square black"></div>
         <div id="g4" class="square white"></div>
         <div id="h4" class="square black"></div>
-
+        
         <div id="a3" class="square black"></div>
         <div id="b3" class="square white"></div>
         <div id="c3" class="square black"></div>
@@ -64,7 +64,7 @@
         <div id="f3" class="square white"></div>
         <div id="g3" class="square black"></div>
         <div id="h3" class="square white"></div>
-
+        
         <div id="a2" class="square white"></div>
         <div id="b2" class="square black"></div>
         <div id="c2" class="square white"></div>
@@ -73,7 +73,7 @@
         <div id="f2" class="square black"></div>
         <div id="g2" class="square white"></div>
         <div id="h2" class="square black"></div>
-
+        
         <div id="a1" class="square black"></div>
         <div id="b1" class="square white"></div>
         <div id="c1" class="square black"></div>
@@ -83,20 +83,21 @@
         <div id="g1" class="square black"></div>
         <div id="h1" class="square white"></div>
     </div>
-    </div>
-    <div class="change-boardColor">
-        <select name="boardSelector" id="boardSelector">
-
-            <option value="wood">Wood</option>
-            <option value="green">Green</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-
-        </select>
-        <input type="submit" id="submit-boardColor">
-    </div>
-    <script src="boardColor.js"></script>
-    <script type="module" src="app.js"></script>
-    <!-- <script src="boardMouse.js"></script> -->
+</div>
+<div class="change-boardColor">
+    <select name="boardSelector" id="boardSelector">
+        
+        <option value="wood">Wood</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        
+    </select>
+    <input type="submit" id="submit-boardColor">
+</div>
+<script src="boardColor.js"></script>
+<script type="module" src="app.js"></script>
+<script src="./action/drag.action.js"></script>
+<!-- <script src="boardMouse.js"></script> -->
 </body>
 </html>
